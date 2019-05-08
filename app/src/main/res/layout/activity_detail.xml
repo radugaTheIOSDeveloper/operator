@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <Button
+        android:id="@+id/sendBtn"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Отправить "
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/btnCantFixed"
+        app:layout_constraintTop_toBottomOf="@+id/textArea" />
+
+    <RadioGroup
+        android:id="@+id/radioGrupINWork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="@color/rad"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonWork"
+        android:layout_width="111dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Исправленно"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnCantFixed"
+        app:layout_constraintTop_toBottomOf="@+id/textArea" />
+
+    <EditText
+        android:id="@+id/textArea"
+        android:layout_width="368dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:hint="Укажите комментарий"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:maxLines="4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGrupINWork" />
+
+    <ProgressBar
+        android:id="@+id/detailProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progressTint="@color/rad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCantFixed"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="Невозможно устранить "
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textArea" />
+
+    <TextView
+        android:id="@+id/textComment"
+        android:layout_width="324dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonWork" />
+
+    <Button
+        android:id="@+id/btntopostpon"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:text="Отложить"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCantFixed" />
+
+    <RadioGroup
+        android:id="@+id/postponeRG"
+        android:layout_width="333dp"
+        android:layout_height="290dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/rad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btntopostpon" />
+
+</android.support.constraint.ConstraintLayout>

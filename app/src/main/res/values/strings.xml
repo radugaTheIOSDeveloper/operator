@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Оператор САМ</string>
+    <string name="btnfix">Исправить</string>
+    <string name="btn_nofix">Невозможно исправить</string>
+    <string name="btn_postpon">Отложить</string>
+    <string name="text_detail">Выберите способ устранения поломки</string>
+    <string name="btn_enter">Отправить</string>
+    <string name="fix">Опишите способ пчинки</string>
+    <string name="msg_token_fmt">22</string>
+
+
+</resources>
